@@ -34,7 +34,38 @@ function loginUserMessage(username){
     return `${username} just logged in`
 }
 
-console.log(loginUserMessage("Keertan"))
+// console.log(loginUserMessage("Keertan"))
 
 //If no attribute is passed to the parameters then the result is undefined not null
 
+function calculateCarPrice(val1, val2, ...num1) {
+    return num1
+}
+
+console.log(calculateCarPrice(200, 400, 500))
+
+// ...  is known as rest operator and spread operator
+
+const user = {
+    username: "hitesh",
+    price: 199
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+handleObject(user);
+
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray))
